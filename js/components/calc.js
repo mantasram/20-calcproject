@@ -47,7 +47,40 @@ class Calc {
     }
 
     render() {
-        let HTML = '';
+        let HTML = `
+        <div class="calc">
+        <div class="screen">
+            <div class="answer">
+                <p>0</p>
+            </div>
+             <div class="equation"></div>
+        </div>
+        <div class="keyboard">
+            <div class="button grey">C</div>
+            <div class="button white">1</div>
+            <div class="button white">4</div>
+            <div class="button white">7</div>
+            <div class="button white">0</div>
+            <div class="button grey">+/-</div>
+            <div class="button white">2</div>
+            <div class="button white">5</div>
+            <div class="button white">8</div>
+            <div class="button white">.</div>
+            <div class="button grey">%</div>
+            <div class="button white">3</div>
+            <div class="button white">6</div>
+            <div class="button white">9</div>
+            <div class="button white">&lt;</div>
+            <div class="button dark">/</div>
+            <div class="button dark">*</div>
+            <div class="button dark">-</div>
+            <div class="button dark">+</div>
+            <div class="button red">=</div>
+        </div>
+    </div>`
+
+        this.DOM.insertAdjacentHTML('beforeend', HTML);
+
 
         this.DOM.innerHTML = HTML;
     }

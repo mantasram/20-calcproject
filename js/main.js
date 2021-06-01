@@ -1,3 +1,3 @@
 import { Calc } from './components/calc.js';
 
-new Calc('.calc');
+new Calc('body');
