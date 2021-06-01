@@ -1,0 +1,7 @@
+@import './base/reset.css';
+@import './components/calc.css';
+
+body {
+  padding: 40px;
+  background-color: #b3b3b3;
+}
